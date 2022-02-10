@@ -1,0 +1,1159 @@
+* :not(ul, ol, li, dl, dt, dd) {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'EB Garamond', serif;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+.index__header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+    background-image: url(../assets/fondo3.jpg);   
+    background-size: cover;
+    background-position: center;
+    border-bottom: 2px solid white;
+}
+
+.logo__AMD{
+    order: 3;
+    align-self: flex-end;
+    width: 250px;
+    margin: 2rem;  
+}
+
+.index__nav{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.nav__a{
+    border: .5px solid white;
+    background-color: rgb(194, 27, 172);
+    color: white;
+    text-decoration: none;
+    border-radius: 1rem;
+    margin: 0px 1rem;
+    padding: 1rem;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition-property: background, border, color, font-size;
+    transition-duration: 2s, 1s, 1s, 2s;
+    box-shadow: 1px 1px 10px #fff;
+}
+
+.nav__a:hover{
+    background-color: #fff;
+    border: none;
+    align-self: center;
+    box-shadow: 1px 1px 5px rgb(194, 27, 172);
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #000;
+    text-decoration: underline;
+}
+
+.index__main{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    flex-grow: 1;
+    background-image: url(../assets/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.tablasDinamicas{
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.index__main__reg{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    flex-grow: 1;
+    background-image: url(../assets/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: auto;
+}
+
+
+
+.index__section{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    margin: 1rem 1rem 2rem;
+   
+}
+
+.index__section2{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    height: auto;
+    padding: 2rem 2rem 10rem;
+    margin: 1rem 2rem 2rem;
+}
+
+.index__section__reg{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    margin: 1rem 1rem 2rem;    
+}
+
+.section__div{
+    display: flex;
+    flex-direction: column;
+    order: -2;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: 1rem;
+}
+
+.inputBuscar{
+    padding: .5rem;
+    margin: .5rem 5rem;
+    border: 1px solid #fff;
+    font-size: 1.2em;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 10px #fff;
+    font-family: 'EB Garamond', serif;
+      
+}
+
+.filters{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.filterCheckbox{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    font-family: 'EB Garamond', serif;
+    margin: 6rem 1rem 0px;
+    
+}
+
+.fecha{
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.micheckbox{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.micheckbox:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.checkboxCont{
+    box-shadow: 1px 1px 10px #fff;
+    margin: .5rem;
+    border: 1px solid #fff;
+    font-size: 1.2em;
+    border-radius: 2rem;
+}
+
+.section__div__reg{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 10vh;
+    margin-bottom: 1rem; 
+}
+
+
+.div_formulario{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario{
+    display: flex;
+    flex-flow: column wrap;
+    min-height: auto;
+    justify-content: space-evenly;
+    border: 1px solid white;
+    padding: .5rem;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    box-shadow: 1px 1px 10px #fff;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2em;
+}
+
+fieldset{
+    display: flex;
+    flex-flow: row wrap;
+    border: none;
+    padding: .5rem;
+    text-align: justify;
+    margin: 1rem;
+    
+}
+
+.fieldset1, .fieldset2{
+    justify-content: space-evenly;
+}
+.fieldset3{
+    justify-content:center;
+}
+
+.label{
+    font-weight: bold;
+    padding: .5rem;
+    margin: 1rem 0px 1rem 1rem;
+    width: 20%;
+    align-self: center;
+    
+}
+
+.input{
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2em;
+    margin: 1rem 1rem 1rem 0px;
+    width: 20%;
+    border-radius: 1rem;
+    align-self: center;
+}
+
+.input__2{
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2em;
+    margin: 1rem 2rem 0px 0px;
+    align-self: center;
+    border-radius: 1rem;
+   
+}
+
+.botonnav{
+    margin-bottom: 1rem;
+}
+
+.h1-sumary{
+    margin: 2rem;
+    font-weight: bold;
+}
+
+.tablasumary{
+    margin-bottom: 2rem;
+}
+
+.continuar{
+    padding: 1rem;
+    margin: 2rem;
+    align-self: flex-end;
+    border-radius: 2rem;
+    text-decoration: none;
+    box-shadow: 1px 1px 10px #fff;
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+    box-shadow: 1px 1px 10px #fff;
+    width: 15%;
+    height: 10vh;
+    transition-property: background, border;
+    transition-duration: 2s, 2s, 2s;
+    font-family: 'Courgette', cursive;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+
+h1{
+    text-align: center;
+    font-size: 3em;
+    align-self: center;
+    font-family: 'Courgette', cursive;
+    font-weight: 30rem;
+    text-shadow: 1px 1px 10px #ffffff;
+}
+
+
+
+.section__div>p{
+    align-self: center;
+    font-size: 1.5em;
+}
+
+#articulo1{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 35vh;
+    margin: 1rem;
+    border: 1px solid white;
+    padding: .5rem;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 10px #fff;
+}
+
+.invisible{
+    display: none;
+}
+
+.tarjeta{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 2rem 1rem;
+    width: 70vw;
+    height: auto;
+    border: 1px solid white;
+    padding: .5rem;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 10px #fff; 
+}
+
+.tarjetaDetalles{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 2rem 1rem;
+    width: 70vw;
+    height: auto;
+    border: 1px solid white;
+    padding: .5rem;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 10px #fff;
+    align-self: center;
+    
+}
+
+.elementos__target{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 1rem;
+    font-family: 'Courgette', cursive;
+    font-size: 1.3em;
+    margin: .5rem;
+    width: 60%;
+}
+
+.mainCards{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    top: 90px;
+    margin: .5rem .5rem 2rem; 
+}
+.imagen__target{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.473);
+    flex-grow: 1;
+    justify-content: center;
+    border-radius: 2rem;
+    margin: .5rem;
+}
+
+.imagenCart{
+    width: 90%;
+    align-self: center;
+    border-radius: 2rem;
+    
+}
+
+.parrafo2__target{
+    
+    text-align: center;
+}
+
+.parrafo3__target{
+    margin: .5rem;
+    color: rgb(227, 243, 7);
+    text-shadow: 1px 1px 10px #020202;
+}
+
+.parrafo4__target{
+    margin: .5rem;
+    color: rgb(0, 255, 21);
+    text-shadow: 1px 1px 10px #020202;
+    align-self: flex-end;
+}
+
+.tabla2{
+    width: 50%;
+    margin: auto;
+    font-size: 1.2em;
+    text-align: center;
+    padding: .5rem;
+    border: 1px solid #fff;
+    box-shadow: 1px 1px 15px #fff;
+    font-family: 'Courgette', cursive;
+    
+}
+
+.tabla1{
+    font-size: 1.2em;
+    text-align: center;
+    padding: .5rem;
+    border: 1px solid #fff;
+    box-shadow: 1px 1px 20px #fff;
+    font-family: 'Courgette', cursive;
+}
+
+tr{
+    border: 1px solid #fff;;
+    box-shadow: 1px 1px 5px #fff;
+}
+
+#section1{
+    display: flex;
+    flex-flow: row wrap;
+    align-self: center;
+    margin: auto;
+    justify-content: space-evenly;
+    width: 70vw;
+    height: auto;
+    border: 1px solid white;
+    padding: .5rem;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 10px #fff;
+}
+
+.h2{
+    
+    align-self: flex-start;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 1rem;
+    font-family: 'Courgette', cursive;
+    text-shadow: 1px 1px 10px #ffffff;
+}
+
+.titulo__secundario{
+    align-self: flex-start;
+    
+    font-weight: bold;
+    font-size: 2em;
+    margin: 1rem;
+    font-family: 'Courgette', cursive;
+    text-shadow: 1px 1px 10px #ffffff;
+    text-decoration: none;
+    color: #000;
+}
+
+.titulo__secundario__target{
+    align-self: flex-start;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 1rem 0px;
+    font-family: 'Courgette', cursive;
+    text-shadow: 1px 1px 10px #ffffff;
+    text-decoration: none;
+    color: #000;
+}
+
+
+.price{
+    font-size: 1.3em;
+    align-self: flex-end;
+    margin-bottom: .3rem;
+}
+
+.parrafo2{
+    font-size: 1.3em;
+    margin: .5rem;
+    width: 45vw; 
+}
+
+.parrafo__past{
+    font-size: 1.3em;
+    margin: .5rem 1rem;
+    width: 45vw; 
+}
+
+.parrafo3{
+    font-size: 1.3em;
+    margin: .5rem;
+    width: 40vw; 
+    margin: .5rem 2rem;
+}
+
+.parrafo4{
+    font-size: 1.3em;
+    margin: .5rem;
+    width: 35vw; 
+    margin: .5rem 2rem;
+}
+
+.fecha{
+    order: 4;
+    font-size: 1.2em;
+    align-self: flex-end;
+    margin: .5rem;
+}
+
+.fecha4{
+    
+    font-size: 1.2em;
+    align-self: flex-end;
+    margin: 1rem;
+}
+
+.botonCards{
+    align-self: flex-start;
+    padding: .5rem;
+    margin: .5rem;
+    border: 1px solid rgba(187, 0, 0, 0);
+    color: #fff;
+    width: 15vw;
+    text-decoration: none;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 10px #fff;
+    font-size: .8em;
+    background-color: rgba(0, 0, 0, 0);
+    
+    
+}
+
+.anclorsolo{
+    font-family: 'Courgette', cursive;
+    text-decoration: none;
+    color: #000;
+}
+
+.anclorsolo:hover{
+    
+    text-decoration: underline;
+}
+
+.anclorsolo:active{
+    cursor: wait;
+    color: rgb(255, 7, 7);
+}
+
+.botonCards:hover{
+    border: 1px solid #fff;
+}
+
+
+.boton{    
+    padding: .5rem;
+    margin: .5rem;
+    border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 10px #fff;
+    transition-property: background, border, font-size;
+    transition-duration: 2s, 2s, 2s;  
+}
+
+.boton:hover{
+    border: 1px solid rgba(255, 255, 255, 0);
+    cursor: pointer;    
+}
+
+
+#articulo2{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    
+    width: 100%;
+    height: 35vh;
+    margin: 1rem;
+    border: 1px solid white;
+    padding: .5rem;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 10px #fff;
+}
+
+.articulo2{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    
+    width: 100%;
+    height: 35vh;
+    margin: 1rem;
+    border: 1px solid white;
+    padding: .5rem;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 10px #fff;
+}
+
+
+#articulo3{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    
+    width: 100%;
+    height: 35vh;
+    margin: 1rem;
+    border: 1px solid white;
+    padding: .5rem;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 10px #fff;
+}
+
+#articulo4{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    
+    width: 100%;
+    height: 35vh;
+    margin: 1rem;
+    border: 1px solid white;
+    padding: .5rem;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 10px #fff;
+}
+
+.imagen{
+    margin: 1rem;
+    width: 220px;
+    border-radius: 1rem;
+}
+.imagen2{
+    margin: 1rem;
+    width: 220px;
+    border-radius: 1rem;
+    height: 150px;
+}
+
+
+
+.pie-pagina{
+    width: 100%;
+    background-image: url(../assets/fondo3.jpg);
+    background-size: cover;
+    background-position: center;
+    border-top: 2px solid white;
+    
+}
+
+.footer-div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1rem;
+    
+}
+
+.box-1{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    justify-content: flex-start;
+    padding: .5rem;
+    
+    
+}
+
+.box-1>h2{
+    align-self: flex-start;
+    margin-bottom: .5rem;
+    font-family: 'Courgette', cursive;
+    text-shadow: 1px 1px 10px #ffffff;
+    padding: 1rem;
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+    
+}
+
+.box-1>h3{
+    align-self: center;
+    font-family: 'Courgette', cursive;
+    text-shadow: 1px 1px 10px #ffffff;
+}
+
+.box-2{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: .5rem;
+    
+}
+
+.box-2>h3{
+    font-family: 'Courgette', cursive;
+    text-shadow: 1px 1px 10px #ffffff;
+    padding: 1rem;
+    color: #fff;
+    font-size: 2em;
+    align-self: center;
+    margin-bottom: 2rem;
+}
+
+.email-a{
+    align-self: center;
+    text-decoration: none;
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 45px;  /* me ayuda acentral los iconos */
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.box-3{
+    display: flex;
+    flex-direction: column;
+    
+    width: 20%;
+    padding: .5rem;
+}
+
+.box-3>h3{
+    font-family: 'Courgette', cursive;
+    text-shadow: 1px 1px 10px #ffffff;
+    padding: 1rem;
+    color: #fff;
+    font-size: 2em;
+    align-self: center;
+    margin-bottom: 2rem;
+}
+
+.red-social{
+    align-self: center;
+}
+
+.red-a{
+    margin:.3rem;
+    text-align: center;
+    text-decoration: none;
+    width: 3rem;
+    height: 3rem;
+    color: #fff;
+    font-size: 1.7rem;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.red-a:hover{
+    color: rgb(30, 174, 218);
+}
+
+
+                    /*---------- ¨responsividad para celular -----------*/
+
+@media (max-width: 680px) {
+
+    .index__header{
+        display: flex;
+        flex-flow: column wrap;
+        height: auto;
+        width: 100%;
+    }
+    
+    .logo__AMD{
+        order: -1;
+        align-self: flex-start;
+    }
+
+    .index__nav{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        align-self: flex-start;
+    }
+
+    .nav__a{
+        margin: .5rem;
+        padding: .5rem;
+        text-align: center;
+    }
+
+    .nav__a:hover{
+        background-color: rgb(194, 27, 172);
+        border: .5px solid white;
+        font-size: 1.2em;
+    }
+
+    .index__main{
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .index__section{
+        display: flex;
+        flex-direction: column wrap;
+        margin: auto;
+    }
+
+    .index__section2{
+        margin: auto;
+    }
+
+    .filterCheckbox{
+        display: none;
+    }
+
+
+    .inputBuscar{
+        background-color: rgba(2, 2, 2, 0.575);
+        color: #fff;
+    }
+
+    .imagen__target{
+        background-color: rgba(255, 255, 255, 0);
+       
+    }
+
+    .imagenCart{
+        width: auto;
+        align-self: center;
+        border-radius: 2rem;
+        
+    }
+
+    .section__div{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .section__div2{
+        margin: 3rem;
+    }
+
+    .parrafo_display{
+        display: none;
+    }
+
+    h1{
+        font-size: 2.3em;
+        align-self: center;  
+    }
+
+    #articulo1, #articulo2, #articulo3, #articulo4{
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        margin: 1rem;
+        align-self: center;
+        justify-content: center;
+    }
+
+    .titulo__secundario, .parrafo2, .imagen, .parrafo4,.parrafo3, .parrafo__past, .imagen2{
+        align-self: center;
+        text-align: center;
+    }
+
+    .h2{
+        align-self: center;
+    }
+
+    
+
+    #parrafo{
+        font-size: 1.2em;
+        text-align: center;
+        align-self: center;
+    }
+
+    .continuar{
+        padding: 1rem;
+        margin: 2rem;
+        border-radius: 2rem;
+        text-decoration: none;
+        width: auto;
+        height: auto;
+        box-shadow: 1px 1px 10px rgb(255, 255, 255);
+        background-color: rgba(255, 255, 255, 0);
+        color: #fff;
+        box-shadow: 1px 1px 10px #fff;
+        font-family: 'Courgette', cursive;
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .prox{
+        text-align: center;
+        align-self: center;
+        font-family: 'EB Garamond', serif;
+        font-size: 1.5em;
+    }
+
+        /* formulario */
+    .div_formulario{
+        display: flex;
+        
+    }
+
+    .formulario{
+        display: flex;
+        flex-flow: row wrap;
+        min-height: auto;
+        justify-content: space-evenly;
+        border: 0px solid rgba(255, 255, 255, 0);
+        padding: .5rem;
+        border-radius: 2rem;
+        margin-bottom: 1rem;
+        box-shadow: 1px 1px 10px rgba(255, 255, 255, 0);
+        font-family: 'EB Garamond', serif;
+        font-size: 1em;
+        
+    }
+
+    .tarjetaDetalles{
+        margin-top: 2rem;
+    }
+
+    .filters{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .botonCards{
+        align-self: center;
+    }
+    
+    
+}
+
+
+/* ulima mediaq */
+
+
+
+
+
+@media (max-width: 1365px){
+    .index__header{
+        display: flex;
+        flex-flow:row wrap;
+        height: auto;
+        width: 100%;
+    }
+    
+    .logo__AMD{
+        order: -1;
+        align-self: flex-start;
+    }
+
+    .index__nav{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        align-self: flex-start;
+    }
+
+    .nav__a{
+        margin: .5rem;
+        padding: .5rem;
+        text-align: center;
+    }
+
+    .nav__a:hover{
+        background-color: rgb(194, 27, 172);
+        border: .5px solid white;
+        font-size: 1.2em;
+    }
+
+    .index__main{
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .index__section{
+        display: flex;
+        flex-direction: column wrap;
+    }
+
+    .section__div{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .section__div2{
+        margin: 3rem;
+    }
+
+
+    h1{
+        font-size: 2.5em;
+        align-self: center;
+        
+    }
+
+    #articulo1, #articulo2, #articulo3, #articulo4{
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        margin: 1rem;
+        align-self: center;
+        justify-content: center;
+    }
+
+    .titulo__secundario, .parrafo2, .imagen, .parrafo4,.parrafo3, .parrafo__past, .imagen2{
+        align-self: center;
+        text-align: center;
+    }
+
+    .h2{
+        align-self: center;
+        flex-direction: row;
+    }
+
+    .footer-div{
+        display: flex;
+    }
+
+    .box-1{
+        display: none;
+    }
+    
+    .box-2{
+        display: none;
+    }
+
+    .box-3{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+
+    
+            
+    #parrafo{
+        font-size: 1.2em;
+        text-align: center;
+        align-self: center;
+    }
+
+    .continuar{
+        padding: 1rem;
+        margin: 2rem;
+        border-radius: 2rem;
+        text-decoration: none;
+        width: auto;
+        height: auto;
+        box-shadow: 1px 1px 10px #fff;
+        background-color: rgba(255, 255, 255, 0);
+        color: #fff;
+        box-shadow: 1px 1px 10px #fff;
+        font-family: 'Courgette', cursive;
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .prox{
+        text-align: center;
+        align-self: center;
+        font-family: 'EB Garamond', serif;
+        font-size: 1.5em;
+    }
+
+        /* formulario */
+
+        /* aquí tuve muchos problemas tratando de acomodar el formulario de forma responsiva.. */
+
+    .div_formulario{
+        display: flex;
+    }
+
+    .formulario{
+        display: flex;
+        flex-flow: column wrap;
+        min-height: auto;
+        justify-content: space-evenly;
+        border: 1px solid white;
+        padding: .5rem;
+        border-radius: 2rem;
+        margin-bottom: 1rem;
+        box-shadow: 1px 1px 10px #fff;
+        font-family: 'EB Garamond', serif;
+        font-size: 1em;
+        
+    }
+
+
+    .input{
+        font-family: 'EB Garamond', serif;
+        font-size: 1.5em;
+        margin: 1rem;
+        align-self: center;
+        width: 60%;
+    }
+
+    .label{
+        align-self: center;
+    }
+
+    .check_reg{
+        align-self: flex-start;
+    }
+
+    .index__section2{
+        margin: auto;
+        
+    }
+
+    .tarjeta{
+        justify-content: center;
+        text-align: center;
+    }
+
+    .tarjetaDetalles{
+        display: flex;
+        flex-flow: column wrap;
+        margin: 2rem 1rem;
+        width: 70vw;
+        height: auto;
+        border: 1px solid white;
+        padding: .5rem;
+        border-radius: 2rem;
+        box-shadow: 1px 1px 10px #fff;
+        align-self: center;
+        align-items: center;
+        
+    }
+
+
+    .imagenCart{
+        width: auto;
+        align-self: center;
+        border-radius: 2rem;
+        padding: .5rem;
+        
+    }
+
+}
+
+
